@@ -1,0 +1,129 @@
+:root{
+    --green: #6ABF4B;
+    --blue: #3877EE;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+img{
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+.wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.shadow{
+    background: #020F20;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: .4;
+    z-index: 0;
+}
+.point{
+    position: absolute;
+    z-index: 1;
+    display: inline-flex;
+    cursor: pointer;
+    opacity: .7;
+    outline: none;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    width: 41px;
+    padding: 15px 11px;
+    max-height: 41px;
+   
+}
+.point svg:first-child{
+    display: none;
+}
+.point svg:last-child{
+    display: block;
+}
+.point__outer{
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.point__inner{
+    font-family: 'Arial';
+    font-size: 14px;
+    color: #fff;
+    margin-left: 15px;
+    display: none;
+}
+.point.green{
+    background-color: var(--green);
+}
+.point.blue{
+    background-color: var(--blue);
+}
+
+.point.active .point__inner{
+    display: block;
+}
+
+.point.active{
+    opacity: 1;
+    width: 100%;
+    max-width: 110px;
+}
+.point.active svg:first-child{
+    display: block;
+}
+.point.active svg:last-child{
+    display: none;
+}
+.point:hover{
+    opacity: 1;
+}
+
+.point-1{
+    left: 35%;
+    top: 43%;
+}
+.point-2{
+    left: 60%;
+    top: 35%;
+}
+.point-3{
+    left: 57%;
+    top: 73%;
+}
+.point-4{
+    left: 68%;
+    top: 61%;
+}
+.point-5{
+    left: 30%;
+    top: 27%;
+}
+.point-6{
+    left: 24%;
+    top: 65%;
+}
+.point-7{
+    left: 71%;
+    top: 20%;
+}
+.point-8{
+    left: 73%;
+    top: 43%;
+}
+.point-9{
+    left: 55%;
+    top: 56%;
+}
+.point-10{
+    left: 83%;
+    top: 64%;
+}
